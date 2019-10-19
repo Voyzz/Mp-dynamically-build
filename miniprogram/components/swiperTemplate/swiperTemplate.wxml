@@ -1,6 +1,6 @@
 <!--components/swiperTemplate/swiperTemplate.wxml-->
 <swiper indicator-dots="true" autoplay="true" style="height:{{height*2}}rpx">
-  <block wx:for="{{imgArr}}" wx:for-item="swiper_item"  wx:key="*this">
+  <block wx:for="{{imgArr}}" wx:for-item="swiper_item"  wx:key="{{index}}">
       <swiper-item>
         <image src="{{swiper_item}}" class="img" style="height:{{height*2}}rpx" mode="aspectFill"></image>
       </swiper-item>

@@ -1,6 +1,6 @@
 <!--components/goodsTemplate/goodsTemplate.wxml-->
 <van-grid column-num="{{columnNum}}">
-  <block wx:for="{{gridArr}}" wx:for-item="gridItem" wx:key="*this">
+  <block wx:for="{{gridArr}}" wx:for-item="gridItem" wx:key="{{index}}">
     <van-grid-item text="{{gridItem.text}}" use-slot="true" url="/pages/details/details?text={{gridItem.text}}&price={{gridItem.price}}&imageUrl={{gridItem.imageUrl}}">
       <view class="cardBox">
         <image class="coverImg" src="{{gridItem.imageUrl}}" mode="aspectFill"/>

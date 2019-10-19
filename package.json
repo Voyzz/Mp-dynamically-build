@@ -1,0 +1,23 @@
+{
+  "name": "mp_dynamically_build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "vant-weapp": "^1.0.0-beta.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Voyzz/mp_dynamically_build.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Voyzz/mp_dynamically_build/issues"
+  },
+  "homepage": "https://github.com/Voyzz/mp_dynamically_build#readme"
+}

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "titleTemplate":"../../components/titleTemplate/titleTemplate"
+    "titleTemplate":"../../components/titleTemplate/titleTemplate",
+    "van-button": "vant-weapp/button"
   }
 }

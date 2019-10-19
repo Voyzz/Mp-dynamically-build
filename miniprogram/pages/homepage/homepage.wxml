@@ -11,5 +11,7 @@
         <gridTemplate wx:if="{{item.type === 4}}" columnNum="{{item.columnNum}}" gridArr="{{item.gridArr}}" />
         <!-- 商品组件 -->
         <goodsTemplate wx:if="{{item.type === 5}}" columnNum="{{item.columnNum}}" gridArr="{{item.gridArr}}"/>
+        <!-- tabBar组件 -->
+        <tabbarTemplate wx:if="{{item.type === 6}}" gridArr="{{item.gridArr}}"/>
     </view>
 </view>

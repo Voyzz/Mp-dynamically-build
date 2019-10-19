@@ -10,7 +10,8 @@ Page({
       {"type": 2,"tabArr": ['热门', '女装', '百货', '鞋包', '食品', '母婴'] },
       {"type": 3,imgArr: ["https://pages.c-ctrip.com/you/component-local/default.png", "https://pages.c-ctrip.com/you/component-local/default.png"]},
       {"type": 4,columnNum: 5,gridArr:[]},
-      {"type": 5,columnNum: 2,gridArr:[]}
+      {"type": 5,columnNum: 2,gridArr:[]},
+      {"type": 6,gridArr:[]}
       ]
   },
 
@@ -20,7 +21,8 @@ Page({
   onLoad: function (options) {
     this.renderModules(this.data.renderModulesInfo)
     this.fakeData({"text": '商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述','imageUrl':'https://pages.c-ctrip.com/you/component-local/default.png',"price":'998'},10,5)
-    this.fakeData({"text": '全球购', 'icon': ''},10,4)
+    this.fakeData({ "text": '全球购', 'icon': '' }, 10, 4)
+    this.fakeData({ "text": '标签', 'icon': 'home-o'},4,6)
   },
 
   // 构造假数据

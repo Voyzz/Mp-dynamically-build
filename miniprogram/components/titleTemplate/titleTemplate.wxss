@@ -1,0 +1,5 @@
+/* components/titleTemplate/titleTemplate.wxss */
+
+.titleModule{
+    color:red
+}

@@ -1,0 +1,6 @@
+<!--pages/homepage/homepage.wxml-->
+<view>
+    <view wx:for="{{renderModulesInfo}}">
+        <titleTemplate wx:if="{{item.type === 1}}" title="{{item.title}}" my-class="titleModule"></titleTemplate>
+    </view>
+</view>

@@ -1,0 +1,6 @@
+/* pages/homepage/homepage.wxss */
+
+
+.titleModule{
+    color:red
+}

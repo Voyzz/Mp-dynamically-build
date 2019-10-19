@@ -1,0 +1,5 @@
+<!--components/titleTemplate/titleTemplate.wxml-->
+<view>
+    <view class="my-class">{{title}}</view>
+    <slot></slot>
+</view>

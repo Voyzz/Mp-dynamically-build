@@ -2,6 +2,9 @@
   "usingComponents": {
     "titleTemplate":"../../components/titleTemplate/titleTemplate",
     "swiperTemplate":"../../components/swiperTemplate/swiperTemplate",
+    "goodsTemplate":"../../components/goodsTemplate/goodsTemplate",
+    "tabsTemplate":"../../components/tabsTemplate/tabsTemplate",
+    "gridTemplate":"../../components/gridTemplate/gridTemplate",
     "van-button": "vant-weapp/button",
     "van-search": "vant-weapp/search",
     "van-tab": "vant-weapp/tab",

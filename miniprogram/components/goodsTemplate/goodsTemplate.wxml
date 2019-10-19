@@ -1,0 +1,14 @@
+<!--components/goodsTemplate/goodsTemplate.wxml-->
+<van-grid column-num="{{columnNum}}">
+  <block wx:for="{{gridArr}}" wx:for-item="gridItem">
+    <van-grid-item text="{{gridItem.text}}" use-slot="true">
+      <view class="cardBox">
+        <image class="coverImg" src="{{gridItem.imageUrl}}" mode="aspectFill"/>
+        <view class="title">{{gridItem.text}}</view>
+        <view class="priceBox">
+          <view class="price">￥{{gridItem.price}}</view>
+        </view>
+      </view>
+    </van-grid-item>
+  </block>
+</van-grid>

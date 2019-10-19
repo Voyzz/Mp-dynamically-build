@@ -1,0 +1,8 @@
+<view>
+  <view>
+    <image src="{{imageUrl}}" mode="aspectFill" class="coverImg"></image>
+  </view>
+  <view class="price">￥{{price}}</view>
+  <view class="title">{{text}}</view>
+  <goodsActionTemplate />
+</view>

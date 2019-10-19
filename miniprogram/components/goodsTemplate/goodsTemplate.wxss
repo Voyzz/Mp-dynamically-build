@@ -7,8 +7,8 @@
 }
 .coverImg {
   width: 370rpx; 
-  height: 400rpx;
-  background-color: gray;
+  /* height: 350rpx; */
+  /* background-color: gray; */
 }
 .title{
   width:340rpx;

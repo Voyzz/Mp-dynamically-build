@@ -1,6 +1,8 @@
 /* pages/homepage/homepage.wxss */
-
+.viewRange{
+  /* height: 90vh; */
+}
 
 .titleModule{
-    color:red
+    /* color:red */
 }

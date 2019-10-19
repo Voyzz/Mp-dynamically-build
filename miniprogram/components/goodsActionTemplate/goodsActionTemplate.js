@@ -1,17 +1,10 @@
-// components/swiperTemplate/swiperTemplate.js
+// components/goodsActionTemplate/goodsActionTemplate.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    imgArr: {
-      type: Array,
-      value: [],
-    },
-    height:{
-      type:"number",
-      value:0
-    }
+
   },
 
   /**

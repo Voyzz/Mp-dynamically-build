@@ -1,5 +1,5 @@
 <van-grid column-num="{{columnNum}}">
-  <block wx:for="{{gridArr}}" wx:for-item="gridItem">
-    <van-grid-item icon="photo-o" text="{{gridItem.text}}" />
+  <block wx:for="{{gridArr}}" wx:for-item="gridItem" wx:key="*this">
+    <van-grid-item icon="{{gridItem.icon}}" text="{{gridItem.text}}" />
   </block>
 </van-grid>

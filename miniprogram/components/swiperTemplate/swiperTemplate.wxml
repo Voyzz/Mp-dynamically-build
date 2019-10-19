@@ -1,0 +1,8 @@
+<!--components/swiperTemplate/swiperTemplate.wxml-->
+<swiper>
+  <block wx:for="{{imgArr}}" wx:for-item="swiper_item">
+      <swiper-item>
+        <image src="{{swiper_item}}"></image>
+      </swiper-item>
+  </block>
+</swiper>

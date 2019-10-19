@@ -1,8 +1,27 @@
 <!--pages/homepage/homepage.wxml-->
 <view>
     <view wx:for="{{renderModulesInfo}}">
-        <titleTemplate wx:if="{{item.type === 1}}" title="{{item.title}}" my-class="titleModule">
-        </titleTemplate>
+        <!-- 搜索组件 -->
+        <van-search wx:if="{{item.type === 1}}" placeholder="{{item.placeholder}}" />
+        <!-- tab标签 -->
+        <van-tabs wx:if="{{item.type === 2}}" active="{{ active }}" bind:change="onChange">
+          <block wx:for="{{item.tabArr}}" wx:for-item="tabItem">
+            <van-tab title="{{tabItem}}"></van-tab>
+          </block>
+        </van-tabs>
+        <!-- 轮播图组件 -->
+        <swiperTemplate wx:if="{{item.type === 3}}" imgArr="{{item.imgArr}}" />
+        <!-- 宫格组件 -->
+        <van-grid wx:if="{{item.type === 4}}" column-num="{{item.columnNum}}">
+          <block wx:for="{{item.gridArr}}" wx:for-item="gridItem">
+            <van-grid-item icon="photo-o" text="{{gridItem.text}}" />
+          </block>
+        </van-grid>
+        <!-- 商品组件 -->
+        <van-grid wx:if="{{item.type === 5}}" column-num="{{item.columnNum}}">
+          <block wx:for="{{item.gridArr}}" wx:for-item="gridItem">
+            <van-grid-item icon="diamond-o" text="{{gridItem.text}}" />
+          </block>
+        </van-grid>
     </view>
-    <van-button type="primary">按钮</van-button>
 </view>

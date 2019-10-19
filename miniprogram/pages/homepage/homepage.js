@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    renderModulesInfo:[{"type":1,"title":"标题1"},{"type":2,"text":"文本内容"},{"type":3,"image":['','']},{"type":1,"title":"标题2"},{"type":1,"title":"hhh"}]
+    renderModulesInfo: [
+      {"type": 1,"placeholder": "搜索" }, 
+      {"type": 2,"tabArr": ['热门', '女装', '百货', '鞋包', '食品', '母婴'] },
+      {"type": 3,imgArr: ["https://pages.c-ctrip.com/you/component-local/default.png", "https://pages.c-ctrip.com/you/component-local/default.png"]},
+      {"type": 4, columnNum: 5,gridArr: [{ "text": '全球购', 'icon': '' }, { "text": '全球购', 'icon': '' }, { "text": '全球购', 'icon': '' }, { "text": '全球购', 'icon': '' }, { "text": '全球购', 'icon': '' }, { "text": '全球购', 'icon': '' }, { "text": '全球购', 'icon': '' }, { "text": '全球购', 'icon': '' }, { "text": '全球购', 'icon': '' }, { "text": '全球购', 'icon': '' }] },
+      { "type": 5, columnNum: 2, gridArr: [{ "text": '商品描述', 'icon': '' }, { "text": '商品描述', 'icon': '' }, { "text": '商品描述', 'icon': '' }, { "text": '商品描述', 'icon': '' }, { "text": '商品描述', 'icon': '' }, { "text": '商品描述', 'icon': '' }, { "text": '商品描述', 'icon': '' }, { "text": '商品描述', 'icon': '' }, { "text": '商品描述', 'icon': '' }, { "text": '商品描述', 'icon': '' }] }
+      ]
   },
 
   /**
@@ -16,9 +22,7 @@ Page({
   },
 
   renderModules: function(res) {
-    console.log('====================================');
     console.log(res);
-    console.log('====================================');
   },
 
   /**

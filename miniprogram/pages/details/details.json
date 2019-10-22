@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "goodsActionTemplate": "../../components/goodsActionTemplate/goodsActionTemplate"
+  }
+}

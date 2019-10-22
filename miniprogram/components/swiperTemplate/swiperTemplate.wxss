@@ -1,0 +1,5 @@
+/* components/swiperTemplate/swiperTemplate.wxss */
+.img{
+  background-color: gray;
+  width: 750rpx;
+}

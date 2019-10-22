@@ -1,6 +1,17 @@
 <!--pages/homepage/homepage.wxml-->
 <view>
-    <view wx:for="{{renderModulesInfo}}">
-        <titleTemplate wx:if="{{item.type === 1}}" title="{{item.title}}" my-class="titleModule"></titleTemplate>
+    <view wx:for="{{renderModulesInfo}}" class="viewRange" wx:key="{{index}}">
+        <!-- 搜索组件 -->
+        <van-search wx:if="{{item.type === 1}}" placeholder="{{item.placeholder}}" />
+        <!-- 标签组件 -->
+        <tabsTemplate wx:if="{{item.type === 2}}" tabArr="{{item.tabliest}}" />
+        <!-- 轮播组件 -->
+        <swiperTemplate wx:if="{{item.type === 3}}" imgArr="{{item.images}}" height="{{item.height}}"/>
+        <!-- 宫格组件 -->
+        <gridTemplate wx:if="{{item.type === 4}}" columnNum="{{item.columnNum}}" gridArr="{{item.columnList}}"/>
+        <!-- 商品组件 -->
+        <goodsTemplate wx:if="{{item.type === 5}}" columnNum="2" gridArr="{{item.goodList}}"/>
+        <!-- 导航组件 -->
+        <tabbarTemplate wx:if="{{item.type === 6}}" gridArr="{{item.tabarList}}"/>
     </view>
 </view>

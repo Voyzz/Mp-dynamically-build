@@ -1,0 +1,38 @@
+/* components/goodsTemplate/goodsTemplate.wxss */
+.cardBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.coverImg {
+  width: 370rpx; 
+  /* height: 350rpx; */
+  /* background-color: gray; */
+}
+.title{
+  width:340rpx;
+  margin-left: 15rpx;
+  height:75rpx;
+  line-height: 37rpx;
+  font-size:28rpx;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.priceBox{
+  height: 37rpx;
+  line-height: 37rpx;
+  width:340rpx;
+  margin-left: 15rpx;
+  margin-top: 15rpx;
+}
+.price{
+  height: 37rpx;
+  line-height: 37rpx;
+  color: red;
+  font-size: 35rpx;
+  font-weight: bold;
+}

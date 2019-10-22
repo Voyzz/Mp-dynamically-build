@@ -5,20 +5,52 @@ Page({
    * 页面的初始数据
    */
   data: {
-    renderModulesInfo:[{"type":1,"title":"标题1"},{"type":2,"text":"文本内容"},{"type":3,"image":['','']},{"type":1,"title":"标题2"},{"type":1,"title":"hhh"}]
+    renderModulesInfo: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.renderModules(this.data.renderModulesInfo)
+    let that = this
+    // 读取配置文件
+    wx.getFileSystemManager().readFile({
+      filePath: './configInfo.txt', //源文件
+      encoding: 'utf-8',
+      success: res => {
+        that.setData({
+          renderModulesInfo: JSON.parse(res.data)
+        })
+        that.renderModules(that.data.renderModulesInfo)
+      },
+      fail: console.error		//复制失败返回error
+    })
+  },
+
+  click:function(e){
+    console.log(e)
+  },
+
+  // 构造假数据
+  fakeData: function (item,sum,type) {
+    let that = this
+    let _gridArr = []
+    let _tmpObj = that.data.renderModulesInfo
+    for (let index = 0; index < sum; index++) {
+      _gridArr.push(item)
+    }
+    _tmpObj.forEach(e=>{
+      if (e.type == type) {
+        e.gridArr = _gridArr
+      }
+    })
+    that.setData({
+      renderModulesInfo:_tmpObj
+    })
   },
 
   renderModules: function(res) {
-    console.log('====================================');
     console.log(res);
-    console.log('====================================');
   },
 
   /**

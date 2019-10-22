@@ -1,0 +1,5 @@
+<van-grid column-num="{{columnNum}}">
+  <block wx:for="{{gridArr}}" wx:for-item="gridItem" wx:key="{{index}}">
+    <van-grid-item icon="{{gridItem.icon}}" text="{{gridItem.text}}" />
+  </block>
+</van-grid>
